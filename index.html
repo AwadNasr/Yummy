@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.css">
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+    <!--Start Nav-Bar -->
+    <div class="side-nav-menu min-vh-100 position-fixed d-flex top-0 me-3">
+        <div class="nav-tab  d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li  class="py-2 position-relative " onclick="showSearchInputs()">Search</li>
+                    <li  class="py-2 position-relative " onclick="getCategories()">Categories</li>
+                    <li  class="py-2 position-relative " onclick="getArea()">Area</li>
+                    <li  class="py-2 position-relative " onclick="getIngredients()">Ingredients</li>
+                    <li  class="py-2 position-relative " onclick="showContacts()">Contact Us</li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook mx-1"></i>
+                    <i class="fa-brands fa-twitter mx-1"></i>
+                    <i class="fa-solid fa-globe mx-1"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright Â© 2023 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header  d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img  class="logo" src="assets/logo.png" alt="" >
+            <i class="fa-solid open-close-icon fa-align-justify fa-2x"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+    <!-- End Vav-Bar -->
+    <div class="container w-75" id="searchContainer">
+       
+    </div>
+    <div class="min-vh-100 position-relative">
+        <div class="inner-loading-screen vh-100  justify-content-center align-items-center">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+    <div class="container">
+        <div class="row g-4 py-4 ms-4 animate__animated animate__bounceInUp wow bounceInUp  "  data-wow-duration="1s" id="rowData">
+
+        </div>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/wow.js/dist/wow.min.js"></script>
+    <script src="./Js/main.js"></script>
+</body>
+</html>
